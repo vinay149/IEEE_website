@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <title>meetings</title>
+	<style type ="text/css">
+	#container {
+height:400px;
+width:1000px;
+margin:20px auto;
+position : relative;
+	 }
+	#img{
+	height:350px;
+	width:1008px;
+	position: absolute;
+	left:16px;
+	top: 1px;
+	 }
+#left_holder{
+height:150px;
+width:108px;
+position:absolute;
+left:48px;
+top:0px;
+
+ }
+
+#right_holder{
+height:100px;
+width:108px;
+right:0px;
+top:8px;
+
+ }
+ .left{
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:153px;
+	left:-10px;
+  }
+  .right{
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:143px;
+	right:4px;
+	  }
+  </style>
+<script type="text/javascript">
+var imagecount = 0;
+var total = 7;
+function slide(x){
+
+var Image =  document.getElementById('img');
+imagecount = imagecount + x;
+if(imagecount > total ) {imagecount = 1;}
+if(imagecount < 1){imagecount = total;}
+Image.src = "slide"   + imagecount +".jpg";
+
+}
+window.setInterval(function slideA(){
+var Image =  document.getElementById('img');
+imagecount = imagecount + 1;
+if(imagecount > total ) {imagecount = 1;}
+if(imagecount < 1){imagecount = total;}
+Image.src = "slide"   + imagecount +".jpg";
+
+},4000);
+</script>
+
+<style>
+	h
+	{
+color:cornflowerblue;
+font-family:monospace;
+font-size:xx-large;
+text-shadow:3px 3px #CCCCCC;
+text-height:max-size;
+	 }
+	 a:hover{
+	 color:red;
+	  }
+	  a:hover
+	  {
+	  text-decoration:none;
+	   }
+	</style>
+<div id="container"><img src= "slide.jpg" id = "img"/> 
+<div id  = "left_holder"><img onClick = "slide(-1)" class = "left" src = "left.png" /></div>
+<div id = "right_holder"><img onClick = "slide(1)" class= "right" src= "right.png" /></div>
+</head>
+  <body  onLoad="slideA() ">
+  <font style="font-family:Verdana, Geneva, sans-serif">
+  
+  </head>
+  <body bgcolor="#aeeeee">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h>MEETINGS OF IEEE</h>
+  <br>
+ 
+  <h align="left"><li>Name Of The Meetings</li></h>
+ <br>
+ <br> 
+  <li> <a href="m1.php" target="iframe_k">14th Annual Gernal Meeting Of Malaysia Section&nbsp;</a>
+  <li> <a href="m2.php" target="iframe_k">2012 Power And Energy Society Gernal Meeting&nbsp;</a>
+  </li>
+  <li> <a href="m3.php" target="iframe_k">IEEE Emea 2013 Sales Meeting&nbsp;</a>
+  </li>
+  <li> <a href="m4.php" target="iframe_k">IEEE Second Gernal Meeting&nbsp;</a>
+  </li>
+  </li>
+  <li> <a href="m5.php" target="iframe_k" color="red">Future Plan Of Ieee Meeting</a>
+  <br>
+  <iframe src ="m1.php" name="iframe_k" align="middle" height = "800" width="800" frameborder="0" scrolling = no>
+  
+  </body>
+</html>

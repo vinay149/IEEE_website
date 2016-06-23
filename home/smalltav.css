@@ -1,0 +1,46 @@
+.tabs {
+  position:relative;   
+  min-height: 700px; /* This part sucks */
+  clear: both;
+  margin: 30px 850px;
+  width:35%;
+  margin-top:-780px;
+  }
+.tab {
+	 box-shadow: 10px 10px 5px #888888;
+  float: left;
+}
+.tab label {
+	 box-shadow: 10px 10px 5px #888888;
+  background: CORNFLOWERblue; 
+  padding: 10px; 
+  border:5px solid #00BFFF; 
+  margin-left: 2px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+	 box-shadow: 10px 10px 5px #888888;
+  display: none;   
+}
+.content {
+	 box-shadow: 10px 10px 5px #888888;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 3px solid cornflowerblue; 
+}
+[type=radio]:checked ~ label {
+	 box-shadow: 10px 10px 5px #888888;
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+	 box-shadow: 10px 10px 5px #888888;
+  z-index: 1;
+}

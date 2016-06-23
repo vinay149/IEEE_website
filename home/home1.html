@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>slider</title>
+	<link rel="stylesheet" type="text/css" href="smalltav.css">
+	<style type ="text/css">
+	table{
+		border-radius: 10px;
+	}
+	#container {
+height:250px;
+width:650px;
+margin:20px auto;
+position : relative;
+	 }
+	 marquee{
+		 box-shadow: 5px 5px 10px #888888;
+		 border-radius: 10px;
+	 }
+	#img{border-radius: 10px;
+		 box-shadow: 7px 7px 10px #888888;
+	height:350px;
+	width:550px;
+	position: absolute;
+	left:40px;
+	top: 1px;
+	 }
+#left_holder{
+height:50px;
+width:108px;
+position:absolute;
+left:35px;
+top:0px;
+
+ }
+
+#right_holder{
+height:250px;
+width:108px;
+right:25px;
+top:8px;
+
+ }
+ .left{
+	height:30px;
+	width:30px;
+	position:absolute;
+	top:153px;
+	left:-5px;
+  }
+  .right{
+	height:32px;
+	width:32px;
+	position:absolute;
+	top:143px;
+	right:50px;
+	  }
+  </style>
+<script type="text/javascript">
+var imagecount = 0;
+var total = 12;
+function slide(x){
+
+var Image =  document.getElementById('img');
+imagecount = imagecount + x;
+if(imagecount > total ) {imagecount = 1;}
+if(imagecount < 1){imagecount = total;}
+Image.src = "slide"   + imagecount +".jpg";
+
+}
+window.setInterval(function slideA(){
+var Image =  document.getElementById('img');
+imagecount = imagecount + 1;
+if(imagecount > total ) {imagecount = 1;}
+if(imagecount < 1){imagecount = total;}
+Image.src = "slide"   + imagecount +".jpg";
+
+},6000);
+</script>
+</head>
+  <body  onLoad="slideA() ">
+  <font style="font-family:Verdana, Geneva, sans-serif">
+<table width="300" border="1" height=100 align ="right" cellpadding = 0 cellspacing = 0 bordercolor="cornflowerblue" >
+<tr bgcolor= "blue">
+<td height = ><font color= "white">IEEE Evolution</font>
+</td>
+</tr>
+<tr>
+<td>
+<video width="340" height="320" controls>
+  <source src="ieee.mp4" type="video/mp4">
+  </video>
+</td>
+</tr>
+      </table>
+ <iframe src ="news&events.php" align = "left" height = "540" width="350" frameborder="0" scrolling = no>
+ </iframe> 
+<div id="container"><img src= "slide.jpg" id = "img"/>  
+<div id  = "left_holder"><img src = "left.png" height="33" class = "left" onClick = "slide(-1)" /></div>
+<div id = "right_holder"><img onClick = "slide(1)" class= "right" src= "right.png" /></div>
+</div><br><br><br><br><br><p style="font-family:verdana"><font size = 2>IEEE creates an environment where members collaborate on world-changing technologies – from computing and sustainable energy systems, to aerospace, communications, robotics, healthcare, and more. The IEEE Brand Identity Toolkit explains the basic usage rules for all corporate identity elements and how to utilize them to create a powerful and consistent communications pieces</p>
+<p style="font-family:verdana">IEEE India Council is the umbrella organisation which coordinates IEEE activities in India. Its primary aim is to assist and coordinate the activities of local "Sections", in order to benefit mutually, and avoid duplication of effort and resources. IEEE India Council was established on 20th May 1976 and is one of the five councils in the Asia Pacific Region (Region #10 of IEEE).</p>
+<p>An "IEEE Section" is an IEEE entity which caters to the needs of a specified geographical area.IEEE UP SECTION is also one of the specified area which provide ptaleform for student to showcase their talent in technology.</font></font>&nbsp;&nbsp;
+<hr><br>
+
+<table border =1 bordercolor ="cornflowerblue" cellpadding = 0 cellspacing=0>
+<tr>
+<td>
+<font color = "cornflowerblue"><h2>Why IEEE</h2></font>
+<video width="340" height="320" controls>
+  <source src="tagline.mp4" type="video/mp4">
+  </video>
+  </td>
+  <td width =470 height=300>
+  <img src="ieeea.png" width="460" height="252"><br>
+  
+New Technology Connections is your resource to emerging technologies within the IEEE. The IEEE Future Directions team has identified the technologies on this page as primary focus areas and has established them as formal initiatives to engage IEEE and the general public. For each initiative, you will find a wealth of knowledge, resources, and opportunities to participate. Visit each featured portal for access to upcoming conferences, news articles, technical papers, related standards, professional organizations, and academic programs.
+  </td>
+  </tr>
+  </table><br>
+  <hr width =800 align="left">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color ="cornflowerblue">  Around UTTAR PRADESH</font></b>
+ <hr  width = "800" align="left"><br>;
+<marquee width="800" height="300" align="left" id='scroll_news' style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="cornflowerblue"; ><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+ <img src="ieee1.jpg" height="300" width="500">
+  <img src="ieee2.jpg" height="300" width="500">
+   <img src="ieee3.jpg" height="300" width="500">
+    <img src="ieee4.jpg" height="300" width="500">
+     <img src="ieee5.jpg" height="300" width="500">
+      <img src="ieee6.jpg" height="300" width="500">
+ </marquee>
+<div class="tabs" >
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1"><b>Facebook</b></label>
+       <div class="content"><b>IEEE</b><font size =2>
+        <p style="font-family:verdana" ><b>22 Sep</b><br><img src = "fb1.jpg" />NTT Electronics started shipping out the industry’s first 20 nm 100G Long-haul/Metro coherent DSP to customers. This chip uses 70% less power than previous models and can be used for 100-Gbps optical fiber systems.</p>
+       <p style="font-family:verdana" ><b>20 Sep</b><br><img src = "fb2.jpg" />Since the Macintosh Computer debuted in 1984 with one of the first mass-marketed GUIs (graphical user interfaces), the resolution of our computer screens have increased 150 times in 30 years. Recently announced 5K displays are at the point where they might be clearer than the human eye!</p>
+	   	  <p style="font-family:verdana" ><b>19 Sep</b><br><img src = "fb3.jpg" />Satya Nadella believes that technologists should focus on innovation above all else. Do you agree?</p><br>
+	  
+	   </div> 
+   </div>
+   
+   </font>
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2"><b>Twitter</b></label>   
+       <div class="content"><font size = 2>
+  <a href="https://twitter.com/IEEEorg" target="_tab"><b>IEEE @IEEEorg</b></a><br><b>23 sep</b><br><br>
+  <p style="font-family:verdana">Made in Space’s #3Dprinter works in microgravity so astronauts can print tools and parts on demand:</p>
+  <a href="https://twitter.com/IEEEorg" target="_tab"><b>IEEE @IEEEorg</a></b><br><b>23 sep</b><br><br>
+  <p style="font-family:verdana">#TechHistory: The first car built in the U.S. ran in Springfield today in 1893.</p>
+  <a href="https://twitter.com/IEEEorg" target="_tab"><b>IEEE @IEEEorg</a></b><br><b>23 sep</b><br><br>
+  <p style="font-family:verdana"target="_tab">Build your own computerized loom to knit sweater designs at home:</p>
+  <a href="https://twitter.com/IEEEorg" target="_tab"><b>IEEE @IEEEorg</a></b><br><b>23 sep</b><br><br>
+  <p style="font-family:verdana">A new sensor platform was created to track #firefighters’ vital signs when in the field:</p>
+  <a href="https://twitter.com/IEEEorg" target="_tab"><b>IEEE @IEEEorg</a></b><br><b>23 sep</b><br><br>
+  <p style="font-family:verdana">A new sensor platform was created to track #firefighters' vital signs when in the field:</p>       </div> </font>
+	  </b> 
+	   <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3"><b>Linked in</b></label>
+        
+       <div class="content"><font size = 2>
+	   <b>IEEE</b><br>
+       <p style="font-family:verdana" ><b>22 Sep</b><br><img src = "link1.jpg" />MIT’s robotics team has improved their Cheetah robot, which can now bound around outdoors completely untethered and run up to 48 Km/h.</p>
+       <p style="font-family:verdana" ><b>20 Sep</b><br><img src = "link2.jpg" />Granville T. Woods, an engineer and inventor, believed that trying leads to big accomplishments.</p>
+	   	  <p style="font-family:verdana" ><b>19 Sep</b><br><img src = "link3.jpg" />Australian scientists are very close to bringing printable solar panels to the consumer marketplace. The solar panels will be printed on plastic and could be used in electronic cases to power the devices they protect.</p><br>
+         <p style="font-family:verdana" ><b>18 Sep</b><br><img src = "link4.jpg" />Japanese developers created tech that generates touchable 3D imagery to be used in gaming or physically shaping computer images. It works using a headset that fools the brain, combining whatever the eye is seeing with vibrations from a connected fingertip device</p>
+		 </div></font>
+   </div>  
+</div>
+
+<br>
+<br>
+<br>
+<hr>
+
+</font>
+</font>
+  </body>
+</html>
+</body>
+</html>
